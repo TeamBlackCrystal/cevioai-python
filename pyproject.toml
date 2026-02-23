@@ -4,10 +4,13 @@ build-backend = "hatchling.build"
 
 [project]
 name = "cevioai-python"
-version = "0.1.0"
+dynamic = ["version"]
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "pythonnet>=3.0.5",
 ]
+
+[tool.hatch.version]
+path = "cevioai_python/__init__.py"
